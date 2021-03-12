@@ -1,0 +1,15 @@
+*{
+  box-sizing: border-box;
+}
+:root{
+  font-size: 10px;
+  font-family: "Open sans";
+}
+body{
+  background-color: #f7f7f7;
+}
+.container{
+  max-width:1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
