@@ -1,8 +1,18 @@
+:root{
+  --footer-article-border: 1px solid #EBEBE3;
+  --partition-link-article-color:#F8B763;
+  --article-btn-bg-color:#3c3d41;
+}
+
+.content-block{
+  padding-bottom: 30px;
+}
+
 .partition{
   text-transform: uppercase;
   padding: 20px 0 15px;
   font-size: 1.4rem;
-  color:#F8B763;
+  color:var(--partition-link-article-color);
 }
 .content-article-title{
   font-family: "Playfair display";
@@ -13,18 +23,26 @@
   padding-bottom: 10px;
   font-size: 1.4rem;
 }
+
+.image-wrapper{
+  max-width: 595px;
+}
+.article-img{
+  width: 100%;
+  height: 100%;
+}
 .article-footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
-  border-top: 1px solid #EBEBE3;
-  border-bottom:1px solid #EBEBE3;
+  border-top: var(--footer-article-border);
+  border-bottom:var(--footer-article-border);
 }
 .article-btn{
   border: none;
   text-transform: uppercase;
-  background-color: #3c3d41;
+  background-color: var(--article-btn-bg-color);
   font-size: 1rem;
   padding: 15px 40px 15px 10px;
   color: #fff;
@@ -33,7 +51,7 @@
 .link{
   display: inline-block;
   text-decoration: none;
-  border:1px solid #F8B763;
+  border:1px solid var(--partition-link-article-color);
   padding: 5px;
   border-radius:50%;
 }
@@ -42,5 +60,5 @@
 }
 
 .link>svg>path{
-  fill: #F8B763;
+  fill: var(--partition-link-article-color);
 }

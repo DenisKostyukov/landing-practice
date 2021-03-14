@@ -1,3 +1,6 @@
+:root{
+  --logo-letter-search:#ef5a42;
+}
 .header{
   position: fixed;
   top: 0;
@@ -5,6 +8,7 @@
   right: 0;
   background-color: #fff;
   padding: 20px 0;
+  z-index: 1;
 }
 .header-inner{
   display:flex;
@@ -26,7 +30,7 @@
 }
 
 .logo-letter:nth-child(2n+1){
-  background-color: #ef5a42;
+  background-color: var(--logo-letter-search);
 }
 .logo-letter:nth-child(2n){
   background-color: #f8b763;
@@ -56,7 +60,7 @@
   transition: all .5s ease-in-out;
 }
 .nav-menu-link:hover{
-  color: #ef5a42;
+  color: var(--logo-letter-search);
 }
 .input-wrapper{
   position: relative;
@@ -80,5 +84,5 @@
   right: 0;
   top: 0;
   bottom: 0;
-  fill: #ef5a42;
+  fill: var(--logo-letter-search);
 }
