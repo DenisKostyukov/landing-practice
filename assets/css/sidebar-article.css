@@ -1,0 +1,73 @@
+.sidebar-block {
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 3px 3px 0px 0px rgba(224,224,224,1);
+  -moz-box-shadow: 3px 3px 0px 0px rgba(224,224,224,1);
+  box-shadow: 3px 3px 0px 0px rgba(224,224,224,1);
+}
+
+.sidebar-block-title {
+  font-family: "Playfair display";
+  font-size: 1.8rem;
+  background-color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  border: 2px solid rgba(248, 183, 99, 1);
+  margin-bottom: 20px;
+  -webkit-box-shadow: 4px 4px 0px 0px rgba(248, 183, 99, 1);
+  -moz-box-shadow: 4px 4px 0px 0px rgba(248, 183, 99, 1);
+  box-shadow: 4px 4px 0px 0px rgba(248, 183, 99, 1);
+}
+
+.sidebar-categories-list-item {
+  padding: 10px 0;
+  color: #c6c6c6;
+  font-size: 1.3rem;
+}
+
+.sidebar-list-item-link {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #626262;
+  margin-right: 5px;
+}
+
+.sidebar-list-item-link::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f054";
+  font-weight: 600;
+  margin-right: 5px;
+  color: #c6c6c6;
+}
+.sidebar-notes-list-item{
+  display: flex;
+  padding: 15px 0;
+}
+.sidebar-notes-list-item + .sidebar-notes-list-item{
+  border-top: 1px solid #EBEBE3;
+}
+.list-image-wrapper{
+  max-width: 83px;
+  margin-right: 15px
+}
+.list-image{
+  width: 100%;
+}
+.sidebar-notes-title{
+  font-family: "Playfair display";
+  font-size: 1.4rem;
+  color: #373737;
+}
+.input-email{
+  border: 2px solid #d6d6d0;
+  width: 100%;
+  padding: 10px;
+}
+.form-email{
+  min-width: 200px;
+  width: 100%;
+}
+.btn-email{
+  right: 20px;
+}

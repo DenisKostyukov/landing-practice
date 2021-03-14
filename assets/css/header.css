@@ -62,27 +62,13 @@
 .nav-menu-link:hover{
   color: var(--logo-letter-search);
 }
-.input-wrapper{
+.form-wrapper{
   position: relative;
 }
 .input-search{
-  border: none;
-  padding: 15px;
-  font-size: 1.3rem;
+  border: 2px solid transparent;
 }
-.input-search::placeholder{
-  font-style: italic;
-}
+
 .input-search:focus{
   border: 2px solid #d6d6d0;
-}
-.search-btn{
-  padding: 0;
-  border: none;
-  background-color: inherit;
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  fill: var(--logo-letter-search);
 }
