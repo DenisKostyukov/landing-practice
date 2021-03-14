@@ -1,7 +1,12 @@
-:root{
-  --logo-letter-search:#ef5a42;
+:root {
+  --orange-color: #ef5a42;
+  --btn-size: 40px;
+  --span-width: 30px;
+  --span-height: 2px;
+  --span-color: #fff;
 }
-.header{
+
+.header {
   position: fixed;
   top: 0;
   left: 0;
@@ -10,14 +15,49 @@
   padding: 20px 0;
   z-index: 1;
 }
-.header-inner{
-  display:flex;
+
+.header-inner {
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo-letter{
-  display:inline-block;
+.nav-mobile {
+  display: none;
+  position: relative;
+  width: var(--btn-size);
+  height: var(--btn-size);
+  right: 0;
+  background-color: var(--orange-color);
+}
+
+.mobile-btn,
+.nav-mobile::before,
+.nav-mobile::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: var(--span-height);
+  width: var(--span-size);
+  left: calc((var(--btn-size) - var(--span-width))/2);
+  right: calc((var(--btn-size) - var(--span-width))/2);
+  background-color: var(--span-color);
+}
+
+.mobile-btn {
+  top: 50%;
+}
+
+.nav-mobile::before {
+  bottom: 70%;
+}
+
+.nav-mobile::after {
+  top: 70%;
+}
+
+.logo-letter {
+  display: inline-block;
   text-align: center;
   text-transform: uppercase;
   color: #fff;
@@ -29,46 +69,53 @@
   text-shadow: 3px 3px 2px rgba(99, 99, 98, 0.73);
 }
 
-.logo-letter:nth-child(2n+1){
-  background-color: var(--logo-letter-search);
+.logo-letter:nth-child(2n+1) {
+  background-color: var(--orange-color);
 }
-.logo-letter:nth-child(2n){
+
+.logo-letter:nth-child(2n) {
   background-color: #f8b763;
 }
-.nav-menu-list{
+
+.nav-menu-list {
   font-size: 0;
 }
 
-.nav-menu{
+.nav-menu {
   margin-left: 10%;
 }
 
-.nav-menu-item{
+.nav-menu-item {
   display: inline-block;
   text-transform: uppercase;
   font-size: 1.4rem;
   font-weight: 600;
 }
 
-.nav-menu-item+.nav-menu-item{
+.nav-menu-item+.nav-menu-item {
   margin-left: 40px;
 }
 
-.nav-menu-link{
+.nav-menu-link {
   text-decoration: none;
   color: #000;
   transition: all .5s ease-in-out;
 }
-.nav-menu-link:hover{
-  color: var(--logo-letter-search);
+
+.nav-menu-link:hover {
+  color: var(--orange-color);
 }
-.form-wrapper{
+
+.form-wrapper {
   position: relative;
 }
-.input-search{
+.form-header{
+  max-width: 170px;
+}
+.input-search {
   border: 2px solid transparent;
 }
 
-.input-search:focus{
+.input-search:focus {
   border: 2px solid #d6d6d0;
 }

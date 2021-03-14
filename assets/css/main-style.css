@@ -18,7 +18,7 @@ body{
 	min-height: 100%;
 }
 .container{
-  max-width:969px;
+  max-width:960px;
   padding: 0 15px;
   margin: 0 auto;
 }

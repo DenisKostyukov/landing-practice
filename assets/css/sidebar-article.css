@@ -11,6 +11,7 @@
   font-family: "Playfair display";
   font-size: 1.8rem;
   background-color: #fff;
+  min-width: 190px;
   text-align: center;
   padding: 10px 20px;
   border: 2px solid rgba(248, 183, 99, 1);
@@ -56,6 +57,7 @@
 }
 .sidebar-notes-title{
   font-family: "Playfair display";
+  display: block;
   font-size: 1.4rem;
   color: #373737;
 }
@@ -63,11 +65,14 @@
   border: 2px solid #d6d6d0;
   width: 100%;
   padding: 10px;
+  
 }
 .form-email{
-  min-width: 200px;
+  min-width: 180px;
   width: 100%;
+  margin: 0 auto;
 }
 .btn-email{
   right: 20px;
+  transform: rotate(-45deg);
 }
